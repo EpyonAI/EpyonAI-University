@@ -1,0 +1,32 @@
+{
+  "name": "EpyonAI-University",
+  "projectId": "prj_epyonai_university",
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
+  "public": false,
+  "env": [
+    {
+      "key": "EPYON_DOMAIN",
+      "value": "epyonai"
+    }
+  ],
+  "envs": {
+    "preview": {
+      "EPYON_DOMAIN": "epyonai",
+      "NODE_ENV": "development"
+    },
+    "production": {
+      "EPYON_DOMAIN": "epyonai",
+      "NODE_ENV": "production"
+    }
+  },
+  "regions": ["sfo1"],
+  "functions": {
+    "api/**/*.ts": {
+      "memory": 512,
+      "maxDuration": 30
+    }
+  }
+}
