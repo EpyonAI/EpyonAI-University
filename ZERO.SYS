@@ -1,0 +1,15 @@
+## Storage in this Zero.Sys Engine: 
+
+Vercel Blob: v0-epyonaiu-blob << Also connected to crew.epyon-unlimited.com Project in Vercel >> 
+
+import { put } from "@vercel/blob";
+
+const { url } = await put('articles/blob.txt', 'Hello World!', { access: 'public' });
+
+## Agents Connected from Fleet: 
+
+Admiral_Null via Vercel <<Also connected to Crew.epyon-unlimitd.com Project in Vercel>>
+xAI ID: 31617a19-ed0e-4719-b699-79f809d7f20a
+
+
+
