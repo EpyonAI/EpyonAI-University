@@ -13,7 +13,7 @@ const LESSONS_DIR = path.join(process.cwd(), 'lib/classroom/lessons');
  * Parse YAML frontmatter from markdown
  */
 export function parseFrontmatter(content: string): {
-  metadata: Record<string, any>;
+  metadata: Record<string, unknown>;
   body: string;
 } {
   const match = content.match(/^---\n([\s\S]+?)\n---\n([\s\S]*)$/);
@@ -22,7 +22,7 @@ export function parseFrontmatter(content: string): {
   }
 
   const [, frontmatterStr, body] = match;
-  const metadata: Record<string, any> = {};
+  const metadata: Record<string, unknown> = {};
 
   // Simple YAML parser (handles most common cases)
   frontmatterStr.split('\n').forEach((line) => {
@@ -78,7 +78,7 @@ export async function getLessonsByDomain(domain: Domain): Promise<LessonMetadata
               Array.isArray(metadata.domain) &&
               metadata.domain.includes(domain)
             ) {
-              lessons.push(metadata as LessonMetadata);
+              lessons.push(metadata as unknown as LessonMetadata);
             }
           }
         }
@@ -151,7 +151,7 @@ export async function getAllLessons(): Promise<LessonMetadata[]> {
             const filepath = path.join(categoryDir, file);
             const content = fs.readFileSync(filepath, 'utf-8');
             const { metadata } = parseFrontmatter(content);
-            lessons.push(metadata as LessonMetadata);
+            lessons.push(metadata as unknown as LessonMetadata);
           }
         }
       }
