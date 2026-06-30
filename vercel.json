@@ -1,6 +1,5 @@
 {
   "name": "EpyonAI-University",
-  "projectId": "prj_epyonai_university",
   "buildCommand": "pnpm run build",
   "devCommand": "pnpm run dev",
   "installCommand": "pnpm install",
