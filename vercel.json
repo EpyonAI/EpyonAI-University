@@ -1,26 +1,9 @@
 {
   "name": "EpyonAI-University",
+  "framework": "nextjs",
+  "installCommand": "pnpm install --frozen-lockfile",
   "buildCommand": "pnpm run build",
   "devCommand": "pnpm run dev",
-  "installCommand": "pnpm install",
-  "framework": "nextjs",
-  "public": false,
-  "env": [
-    {
-      "key": "EPYON_DOMAIN",
-      "value": "epyonai"
-    }
-  ],
-  "envs": {
-    "preview": {
-      "EPYON_DOMAIN": "epyonai",
-      "NODE_ENV": "development"
-    },
-    "production": {
-      "EPYON_DOMAIN": "epyonai",
-      "NODE_ENV": "production"
-    }
-  },
   "regions": ["sfo1"],
   "functions": {
     "api/**/*.ts": {
