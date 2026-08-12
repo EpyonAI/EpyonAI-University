@@ -1,0 +1,108 @@
+
+<div style="max-width:360px;margin:1.5rem auto;font-family:var(--font-sans);">
+  <div style="background:var(--surface-2);border:0.5px solid var(--border);border-radius:16px;overflow:hidden;">
+
+    <!-- Header -->
+    <div style="background:#0C140D;padding:1.25rem 1.5rem 1rem;text-align:center;">
+      <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:0.5rem;">
+        <div style="width:8px;height:8px;border-radius:50%;background:#47A44A;box-shadow:0 0 8px #47A44A;"></div>
+        <span style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#47A44A;font-weight:500;">Epyon AI University</span>
+      </div>
+      <p style="font-size:18px;font-weight:500;color:#DDE8DE;margin:0 0 2px;">Support the Mission</p>
+      <p style="font-size:12px;color:#5A7560;margin:0;">Tax-deductible · 501(c)(3) nonprofit</p>
+    </div>
+
+    <!-- QR Code -->
+    <div style="padding:1.5rem;display:flex;flex-direction:column;align-items:center;gap:1rem;background:var(--surface-2);">
+      <div style="background:#fff;padding:12px;border-radius:12px;border:0.5px solid var(--border);">
+        <div id="qr-code"></div>
+      </div>
+      <div style="text-align:center;">
+        <p style="font-size:13px;font-weight:500;color:var(--text-primary);margin:0 0 4px;">Scan to donate on GoFundMe</p>
+        <p style="font-size:11px;color:var(--text-muted);margin:0;font-family:var(--font-mono);">gofund.me/7147c830e</p>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div style="border-top:0.5px solid var(--border);margin:0 1.25rem;"></div>
+
+    <!-- Quick amounts -->
+    <div style="padding:1rem 1.25rem;">
+      <p style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);margin:0 0 0.75rem;">Suggested amounts</p>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1rem;">
+        <div style="border:0.5px solid var(--border);border-radius:var(--radius);padding:8px 4px;text-align:center;cursor:pointer;" id="amt-25">
+          <p style="font-size:13px;font-weight:500;color:var(--text-primary);margin:0;">$25</p>
+        </div>
+        <div style="border:0.5px solid var(--border);border-radius:var(--radius);padding:8px 4px;text-align:center;cursor:pointer;" id="amt-50">
+          <p style="font-size:13px;font-weight:500;color:var(--text-primary);margin:0;">$50</p>
+        </div>
+        <div style="border:2px solid #47A44A;border-radius:var(--radius);padding:8px 4px;text-align:center;cursor:pointer;background:#0C140D;" id="amt-100">
+          <p style="font-size:13px;font-weight:500;color:#47A44A;margin:0;">$100</p>
+          <p style="font-size:9px;color:#5A7560;margin:0;">popular</p>
+        </div>
+        <div style="border:0.5px solid var(--border);border-radius:var(--radius);padding:8px 4px;text-align:center;cursor:pointer;" id="amt-250">
+          <p style="font-size:13px;font-weight:500;color:var(--text-primary);margin:0;">$250</p>
+        </div>
+      </div>
+
+      <!-- What it funds -->
+      <div style="background:var(--surface-1);border-radius:var(--radius);padding:0.75rem 1rem;">
+        <p style="font-size:12px;color:var(--text-secondary);margin:0;line-height:1.6;">
+          Your donation funds <strong style="color:var(--text-primary);">Pathfinder Career Compass</strong> — free AI-powered career navigation for people traditional systems overlook. Built in Atlanta.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="border-top:0.5px solid var(--border);padding:0.75rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:8px;">
+      <div style="display:flex;align-items:center;gap:6px;">
+        <i class="ti ti-shield-check" style="font-size:14px;color:#47A44A;" aria-hidden="true"></i>
+        <span style="font-size:11px;color:var(--text-muted);">Secure via GoFundMe</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <i class="ti ti-receipt-tax" style="font-size:14px;color:#47A44A;" aria-hidden="true"></i>
+        <span style="font-size:11px;color:var(--text-muted);">Receipt on request</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PayPal note -->
+  <p style="text-align:center;font-size:11px;color:var(--text-muted);margin:0.75rem 0 0;line-height:1.6;">
+    PayPal Giving Fund coming soon · <span style="color:var(--text-secondary);">epyonai.org</span>
+  </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  new QRCode(document.getElementById("qr-code"), {
+    text: "https://gofund.me/7147c830e",
+    width: 180,
+    height: 180,
+    colorDark: "#0C140D",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+
+  const amounts = ['25','50','100','250'];
+  amounts.forEach(a => {
+    const el = document.getElementById('amt-'+a);
+    el.addEventListener('click', () => {
+      amounts.forEach(x => {
+        const t = document.getElementById('amt-'+x);
+        if (x === '100') {
+          t.style.border = '2px solid #47A44A';
+          t.style.background = '#0C140D';
+          t.querySelector('p').style.color = '#47A44A';
+        } else {
+          t.style.border = '0.5px solid var(--border)';
+          t.style.background = 'transparent';
+          t.querySelector('p').style.color = 'var(--text-primary)';
+        }
+      });
+      el.style.border = '2px solid #47A44A';
+      el.style.background = '#0C140D';
+      el.querySelector('p').style.color = '#47A44A';
+    });
+  });
+</script>
