@@ -1,0 +1,53 @@
+{
+  "name": "@epyon/epyonai-university",
+  "version": "0.1.0",
+  "description": "Epyon AI University: Educational platform for AI fundamentals, accessible across EpyonAI, EpyonTax, and The Epyon",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "classroom:dev": "next dev --port 3001"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next-mdx-remote": "^5.0.0",
+    "mdx-bundler": "^10.0.0",
+    "zustand": "^4.4.0",
+    "@radix-ui/react-accordion": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "tailwindcss": "^3.3.0",
+    "clsx": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "vitest": "^0.34.0",
+    "@testing-library/react": "^14.0.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "prettier": "^3.0.0",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^15.0.0"
+  },
+  "keywords": [
+    "ai",
+    "education",
+    "classroom",
+    "epyon",
+    "learning-platform"
+  ],
+  "author": "Epyon AI University",
+  "license": "Apache-2.0"
+}
