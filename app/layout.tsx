@@ -4,19 +4,19 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'EpyonAI University — Knowledge Made Real',
+  title: 'EpyonAI University | 501(c)(3) AI Education Nonprofit',
   description:
-    'A virtual nonprofit campus where knowledge is made accessible to all who seek it by adapting technical content into formats real people can understand.',
+    'EpyonAI University is a 501(c)(3) nonprofit adapting AI, technology, and opportunity knowledge into accessible learning pathways.',
   keywords: [
     'AI education',
+    'AI safety for kids',
     'workforce development',
     'content adaptation',
     'accessible learning',
+    '501(c)(3)',
     'nonprofit',
     'Atlanta',
     'EpyonAI',
-    'library systems',
-    'AI skills',
   ],
   authors: [{ name: 'EpyonAI University' }],
   creator: 'EpyonAI University',
@@ -25,16 +25,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.epyonai.org',
-    title: 'EpyonAI University — Knowledge Made Real',
+    title: 'EpyonAI University | 501(c)(3) AI Education Nonprofit',
     description:
-      'A virtual nonprofit campus making technical knowledge accessible to everyone.',
+      'A nonprofit campus for AI safety, adapted learning, workforce pathways, and open education projects.',
     siteName: 'EpyonAI University',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EpyonAI University — Knowledge Made Real',
+    title: 'EpyonAI University | 501(c)(3) AI Education Nonprofit',
     description:
-      'A virtual nonprofit campus making technical knowledge accessible to everyone.',
+      'A nonprofit campus for AI safety, adapted learning, workforce pathways, and open education projects.',
   },
   robots: {
     index: true,
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#0f172a',
+  themeColor: '#070b12',
 };
 
 export default function RootLayout({
@@ -55,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen bg-white">
+      <body className="min-h-screen bg-[#070b12]">
         <Header />
         <main>{children}</main>
         <Footer />

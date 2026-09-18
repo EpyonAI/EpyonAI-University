@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   html {
@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply font-sans text-slate-800 antialiased;
+    @apply font-sans text-slate-900 antialiased;
   }
 
   h1,
@@ -19,50 +19,48 @@
   h4,
   h5,
   h6 {
-    @apply font-semibold leading-tight;
+    @apply leading-tight;
+  }
+
+  ::selection {
+    @apply bg-cyan-300 text-slate-950;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white bg-violet-700 hover:bg-violet-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2;
+    @apply inline-flex min-h-12 items-center justify-center gap-2 bg-cyan-300 px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-200 focus:ring-offset-2 focus:ring-offset-slate-950;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white border-2 border-white/30 hover:border-white/60 hover:bg-white/10 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent;
+    @apply inline-flex min-h-12 items-center justify-center gap-2 border border-white/40 px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-white transition hover:border-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/60 focus:ring-offset-2 focus:ring-offset-slate-950;
   }
 
-  .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-violet-700 border-2 border-violet-700 hover:bg-violet-700 hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2;
+  .btn-dark {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 bg-slate-950 px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-white transition hover:bg-violet-800 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2;
   }
 
-  .section-title {
-    @apply text-3xl sm:text-4xl font-bold text-slate-900;
+  .project-card {
+    @apply border border-slate-200 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-violet-300 hover:shadow-xl;
   }
 
-  .section-subtitle {
-    @apply text-lg text-slate-600 max-w-2xl;
+  .bio-card {
+    @apply border border-white/10 bg-white/[0.04] p-7 transition duration-200 hover:border-cyan-300/40 hover:bg-white/[0.07];
   }
 
-  .card {
-    @apply bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-200;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .donation-row {
+    @apply flex items-center justify-between gap-6 border border-slate-200 bg-white p-6 shadow-sm transition duration-200 hover:border-violet-300 hover:shadow-lg;
   }
 
-  .animation-delay-200 {
-    animation-delay: 200ms;
+  .contact-panel {
+    @apply border border-white/10 bg-white/[0.04] p-7;
   }
 
-  .animation-delay-400 {
-    animation-delay: 400ms;
+  .contact-link {
+    @apply block border-b border-white/10 py-4 text-lg font-bold text-cyan-200 transition last:border-b-0 hover:text-white;
   }
 
-  .animation-delay-600 {
-    animation-delay: 600ms;
+  .text-link {
+    @apply inline-flex items-center gap-1 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:text-violet-700;
   }
 }
