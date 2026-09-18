@@ -1,7 +1,7 @@
 {
   "name": "EpyonAI-University",
   "framework": "nextjs",
-  "installCommand": "pnpm install --frozen-lockfile",
+  "installCommand": "pnpm install",
   "buildCommand": "pnpm run build",
   "devCommand": "pnpm run dev",
   "regions": ["sfo1"],
