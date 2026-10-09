@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "control_issue": "https://github.com/EpyonAI/EpyonAI-University/issues/8",
+  "last_verified": "2026-10-09",
+  "orders": [
+    {
+      "id": "W01",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/9",
+      "worker": "gpt-publishing",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W02",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/10",
+      "worker": "gpt-web-content",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W01"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W03",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/11",
+      "worker": "gpt-volunteer-portal",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W01"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W04",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/12",
+      "worker": "gpt-community",
+      "requested_model": "GPT-6 Luna",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W05",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/13",
+      "worker": "gpt-donations",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W06",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/18",
+      "worker": "gpt-web-content",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W07",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/14",
+      "worker": "gpt-libraries",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W02"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W08",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/15",
+      "worker": "gpt-learning",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W02"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W09",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/16",
+      "worker": "gpt-publishing",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W01"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W10",
+      "repo": "EpyonAI/EpyonAI-University",
+      "url": "https://github.com/EpyonAI/EpyonAI-University/issues/17",
+      "worker": "gpt-release-review",
+      "requested_model": "GPT-6 Astra",
+      "depends_on": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W11",
+      "repo": "EpyonAI/patch",
+      "url": "https://github.com/EpyonAI/patch/issues/5",
+      "worker": "gpt-patch-studio",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W12",
+      "repo": "EpyonAI/patch",
+      "url": "https://github.com/EpyonAI/patch/issues/6",
+      "worker": "gpt-patch-studio",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W11"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W13",
+      "repo": "EpyonAI/Pathfinder.Compass.ATL",
+      "url": "https://github.com/EpyonAI/Pathfinder.Compass.ATL/issues/1",
+      "worker": "gpt-libraries",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W14",
+      "repo": "EpyonAI/Odyssey",
+      "url": "https://github.com/EpyonAI/Odyssey/issues/3",
+      "worker": "gpt-publishing",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W15",
+      "repo": "EpyonAI/Odyssey",
+      "url": "https://github.com/EpyonAI/Odyssey/issues/4",
+      "worker": "gpt-libraries",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W13",
+        "W14"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W16",
+      "repo": "EpyonAI/Pathfinder",
+      "url": "https://github.com/EpyonAI/Pathfinder/issues/127",
+      "worker": "gpt-salvage",
+      "requested_model": "GPT-6 Luna",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W17",
+      "repo": "EpyonAI/Pathfinder",
+      "url": "https://github.com/EpyonAI/Pathfinder/issues/128",
+      "worker": "gpt-release-review",
+      "requested_model": "GPT-6 Astra",
+      "depends_on": [],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W18",
+      "repo": "The-3pyon/Epyon.UNLTD",
+      "url": "https://github.com/The-3pyon/Epyon.UNLTD/issues/25",
+      "worker": "gpt-web-content",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W01",
+        "W02"
+      ],
+      "status": "QUEUED",
+      "session": null
+    },
+    {
+      "id": "W19",
+      "repo": "EpyonAI/Odyssey",
+      "url": "https://github.com/EpyonAI/Odyssey/issues/5",
+      "worker": "gpt-learning",
+      "requested_model": "GPT-6.1 Sol",
+      "depends_on": [
+        "W14"
+      ],
+      "status": "QUEUED",
+      "session": null
+    }
+  ]
+}
