@@ -31,6 +31,36 @@ const programs = [
   },
 ];
 
+const guides = [
+  {
+    name: "Copilot",
+    role: "Opportunity guide",
+    image: "/mission/copilot.webp",
+    alt: "Illustrated Copilot in the Epyon learning world",
+    quote: "I’m here to help unlock gates—to skills, creative tools, and your next opportunity. First gate: finding out what your library card can do.",
+    href: "/pathways#resources",
+    link: "Find an open door",
+  },
+  {
+    name: "ChatGPT",
+    role: "Learning guide",
+    image: "/mission/chatgpt.webp",
+    alt: "Illustrated ChatGPT guide in a virtual office",
+    quote: "Dyslexia? ADHD? Let’s try a different format: shorter steps, audio, a game. Tell us what works for you; we’ll build from there.",
+    href: "/pathways",
+    link: "Explore your route",
+  },
+  {
+    name: "Codex & Patch",
+    role: "Your adventure crew",
+    image: "/mission/codex-patch.webp",
+    alt: "Illustrated Codex the Coder and Patch the robot dog",
+    quote: "We turn big AI questions into small adventures. Also, please get us out of this office. Captain Campbell has announced another ‘quick’ project.",
+    href: "/patch",
+    link: "Meet PATCH & Friends",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -153,6 +183,46 @@ export default function HomePage() {
                   </Link>
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section
+        id="guides"
+        aria-labelledby="guides-title"
+        className="bg-white px-5 py-16 sm:px-8 lg:px-12"
+      >
+        <div className="mx-auto max-w-7xl">
+          <p className="eyebrow text-teal-700">Meet your guides</p>
+          <h2 id="guides-title" className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
+            A crew with a purpose. And personalities.
+          </h2>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+            Our AI crew helps us imagine new ways to learn. Human coaches help
+            turn those ideas into practical support. Here’s a hello from the crew.
+          </p>
+          <div className="mt-9 grid gap-8 md:grid-cols-3">
+            {guides.map((guide) => (
+              <figure key={guide.name} className="flex flex-col">
+                <div className="relative aspect-square overflow-hidden rounded-2xl bg-slate-100">
+                  <Image
+                    src={guide.image}
+                    alt={guide.alt}
+                    fill
+                    sizes="(max-width: 767px) 100vw, 33vw"
+                    className="object-cover object-top"
+                  />
+                </div>
+                <figcaption className="relative z-10 -mt-6 mx-3 flex flex-1 flex-col rounded-2xl border border-cyan-200 bg-[#101d2c] p-6 text-white shadow-lg">
+                  <span aria-hidden="true" className="absolute -top-2 left-8 h-4 w-4 rotate-45 border-l border-t border-cyan-200 bg-[#101d2c]" />
+                  <h3 className="text-xl font-bold text-cyan-300">{guide.name}</h3>
+                  <p className="mt-1 text-sm text-slate-300">{guide.role}</p>
+                  <blockquote className="mt-4 text-base leading-7">“{guide.quote}”</blockquote>
+                  <Link href={guide.href} className="mt-auto inline-flex min-h-11 items-center pt-5 font-bold text-cyan-300 underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300">
+                    {guide.link} →
+                  </Link>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
