@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const projectLinks = [
   { label: 'Patch', href: 'https://epyonai.github.io/patch/' },
-  { label: 'Pathfinder', href: 'https://project-dq4w2.vercel.app' },
+  { label: 'Pathfinder', href: 'https://pathfinder.epyonai.org' },
   { label: 'Compass News', href: 'https://compass.epyonai.org' },
   { label: 'Chef Kirby', href: 'https://chef-kirby.vercel.app' },
   { label: 'The Classroom', href: 'https://github.com/EpyonAI/EpyonAI-University' },
