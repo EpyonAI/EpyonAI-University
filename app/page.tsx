@@ -4,8 +4,8 @@ const projectLinks = {
     github: 'https://github.com/EpyonAI/patch',
   },
   pathfinder: {
-    live: 'https://project-dq4w2.vercel.app',
-    github: 'https://github.com/EpyonAI/Pathfinder',
+    live: 'https://pathfinder.epyonai.org',
+    github: 'https://github.com/EpyonAI/Odyssey',
   },
   compass: {
     live: 'https://compass.epyonai.org',
@@ -79,18 +79,11 @@ const leaders = [
 
 const donationOptions = [
   {
-    name: 'GoFundMe',
-    description:
-      'Support launch costs, youth AI safety materials, community workshops, and nonprofit education infrastructure.',
-    href: '#contact',
-    note: 'Add campaign link',
-  },
-  {
     name: 'PayPal',
     description:
-      'Make a direct contribution once the official EpyonAI University nonprofit payment link is connected.',
-    href: '#contact',
-    note: 'Add PayPal link',
+      'Support accessible learning, human coaching, and community education through PayPal.',
+    href: 'https://www.paypal.com/ncp/payment/SXDWW8U3FGZAW',
+    note: 'Support through PayPal',
   },
   {
     name: 'GitHub',
@@ -303,8 +296,8 @@ export default function HomePage() {
               <p className="mt-5 text-lg leading-8 text-slate-700">
                 Donations support child-safe AI literacy, learner-centered
                 career pathways, open-source education infrastructure, and
-                community programs. Official GoFundMe and PayPal links can be
-                dropped into this section as soon as they are ready.
+                community programs. Support the mission through PayPal, or
+                contribute your skills through our GitHub community.
               </p>
             </div>
             <div className="grid gap-4">
