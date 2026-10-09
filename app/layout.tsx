@@ -1,40 +1,49 @@
-import type { Metadata, Viewport } from 'next';
-import './globals.css';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import type { Metadata, Viewport } from "next";
+import "./globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: 'EpyonAI University | 501(c)(3) AI Education Nonprofit',
+  title: "Epyon AI University | Potential into opportunity",
   description:
-    'EpyonAI University is a 501(c)(3) nonprofit adapting AI, technology, and opportunity knowledge into accessible learning pathways.',
+    "Potential is everywhere. Opportunity should be, too. We bring human coaching, AI guides, and community resources together to make learning accessible.",
   keywords: [
-    'AI education',
-    'AI safety for kids',
-    'workforce development',
-    'content adaptation',
-    'accessible learning',
-    '501(c)(3)',
-    'nonprofit',
-    'Atlanta',
-    'EpyonAI',
+    "AI education",
+    "AI safety for kids",
+    "workforce development",
+    "content adaptation",
+    "accessible learning",
+    "501(c)(3)",
+    "nonprofit",
+    "Atlanta",
+    "EpyonAI",
   ],
-  authors: [{ name: 'EpyonAI University' }],
-  creator: 'EpyonAI University',
-  metadataBase: new URL('https://www.epyonai.org'),
+  authors: [{ name: "Epyon AI University" }],
+  creator: "Epyon AI University",
+  metadataBase: new URL("https://www.epyonai.org"),
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.epyonai.org',
-    title: 'EpyonAI University | 501(c)(3) AI Education Nonprofit',
+    type: "website",
+    locale: "en_US",
+    url: "https://www.epyonai.org",
+    title: "Epyon AI University | Potential into opportunity",
     description:
-      'A nonprofit campus for AI safety, adapted learning, workforce pathways, and open education projects.',
-    siteName: 'EpyonAI University',
+      "Human coaches, AI guides, and community resources. Discover Pathways, PATCH, and Compass News.",
+    siteName: "Epyon AI University",
+    images: [
+      {
+        url: "/mission/copilot.webp",
+        width: 752,
+        height: 752,
+        alt: "An illustrated Epyon AI guide",
+      },
+    ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'EpyonAI University | 501(c)(3) AI Education Nonprofit',
+    card: "summary_large_image",
+    images: ["/mission/copilot.webp"],
+    title: "Epyon AI University | Potential into opportunity",
     description:
-      'A nonprofit campus for AI safety, adapted learning, workforce pathways, and open education projects.',
+      "Human coaches, AI guides, and community resources. Discover Pathways, PATCH, and Compass News.",
   },
   robots: {
     index: true,
@@ -43,9 +52,9 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
-  themeColor: '#070b12',
+  themeColor: "#070b12",
 };
 
 export default function RootLayout({
