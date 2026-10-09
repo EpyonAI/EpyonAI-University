@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/#mission", label: "Mission" },
@@ -36,9 +37,13 @@ export default function Header() {
           className="flex items-center gap-3"
           aria-label="EpyonAI University home"
         >
-          <span className="grid h-9 w-9 place-items-center bg-cyan-300 text-sm font-black text-slate-950">
-            E
-          </span>
+          <Image
+            src="/mission/eaiu-logo.png"
+            alt=""
+            width={36}
+            height={40}
+            className="h-10 w-9 object-contain"
+          />
           <span className="text-sm font-black uppercase tracking-[0.18em] text-white sm:text-base">
             EpyonAI
           </span>

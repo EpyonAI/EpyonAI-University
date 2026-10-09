@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const projectLinks = [
@@ -27,9 +28,13 @@ export default function Footer() {
             className="inline-flex items-center gap-3"
             aria-label="Epyon AI University home"
           >
-            <span className="grid h-9 w-9 place-items-center bg-cyan-300 text-sm font-black text-slate-950">
-              E
-            </span>
+            <Image
+              src="/mission/eaiu-logo.png"
+              alt=""
+              width={36}
+              height={40}
+              className="h-10 w-9 object-contain"
+            />
             <span className="text-sm font-black uppercase tracking-[0.18em] text-white">
               Epyon AI University
             </span>
