@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  [id] {
+    scroll-margin-top: 6rem;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -28,6 +31,9 @@
 }
 
 @layer components {
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.2em];
+  }
   .btn-primary {
     @apply inline-flex min-h-12 items-center justify-center gap-2 bg-cyan-300 px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-200 focus:ring-offset-2 focus:ring-offset-slate-950;
   }
@@ -62,5 +68,17 @@
 
   .text-link {
     @apply inline-flex items-center gap-1 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:text-violet-700;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }
