@@ -43,6 +43,8 @@ export default function Footer() {
             A Georgia 501(c)(3) educational nonprofit making learning accessible
             and helping people turn potential into opportunity.
           </p>
+          <p className="mt-4 text-sm leading-7">EIN: 41-3985129</p>
+          <p className="text-sm leading-7">Atlanta, Georgia, United States</p>
           <p className="mt-6 text-xs">
             Copyright {new Date().getFullYear()} Epyon AI University. Built by
             the Epyon crew.

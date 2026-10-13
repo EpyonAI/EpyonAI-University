@@ -63,6 +63,11 @@ export default function AboutPage() {
           currently an accredited degree-granting university. We are part of the
           broader Epyon Unlimited ecosystem.
         </p>
+        <dl className="mt-6 space-y-3 text-slate-700" aria-label="Nonprofit identification">
+          <div><dt className="font-bold">Legal name</dt><dd>Epyon AI University</dd></div>
+          <div><dt className="font-bold">Employer Identification Number (EIN)</dt><dd>41-3985129</dd></div>
+          <div><dt className="font-bold">Location</dt><dd>Atlanta, Georgia, United States</dd></div>
+        </dl>
         <p className="mt-4 leading-7 text-slate-700">
           Our founding volunteers, educators, community contributors, and AI
           crew build together. Humans remain responsible for governance,
