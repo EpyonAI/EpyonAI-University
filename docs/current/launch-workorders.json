@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "control_issue": "https://github.com/EpyonAI/EpyonAI-University/issues/8",
-  "last_verified": "2026-10-09",
+  "last_verified": "2026-10-13T18:56:00-04:00",
   "orders": [
     {
       "id": "W01",
@@ -11,7 +11,8 @@
       "requested_model": "GPT-6.1 Sol",
       "depends_on": [],
       "status": "QUEUED",
-      "session": null
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W02",
@@ -22,8 +23,13 @@
       "depends_on": [
         "W01"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "PUBLISHED_PARTIAL",
+      "session": null,
+      "stalled": false,
+      "evidence": [
+        "https://github.com/EpyonAI/EpyonAI-University/pull/21",
+        "https://github.com/EpyonAI/EpyonAI-University/pull/26"
+      ]
     },
     {
       "id": "W03",
@@ -34,8 +40,9 @@
       "depends_on": [
         "W01"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "BLOCKED",
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W04",
@@ -45,7 +52,8 @@
       "requested_model": "GPT-6 Luna",
       "depends_on": [],
       "status": "QUEUED",
-      "session": null
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W05",
@@ -54,8 +62,12 @@
       "worker": "gpt-donations",
       "requested_model": "GPT-6.1 Sol",
       "depends_on": [],
-      "status": "QUEUED",
-      "session": null
+      "status": "REVIEW_PARTIAL",
+      "session": null,
+      "stalled": true,
+      "evidence": [
+        "https://github.com/EpyonAI/EpyonAI-University/pull/19"
+      ]
     },
     {
       "id": "W06",
@@ -64,8 +76,14 @@
       "worker": "gpt-web-content",
       "requested_model": "GPT-6.1 Sol",
       "depends_on": [],
-      "status": "QUEUED",
-      "session": null
+      "status": "PUBLISHED_PARTIAL",
+      "session": null,
+      "stalled": false,
+      "evidence": [
+        "https://github.com/EpyonAI/EpyonAI-University/pull/22",
+        "https://github.com/EpyonAI/EpyonAI-University/pull/26",
+        "https://www.epyonai.org/about"
+      ]
     },
     {
       "id": "W07",
@@ -76,8 +94,9 @@
       "depends_on": [
         "W02"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "BLOCKED",
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W08",
@@ -88,8 +107,12 @@
       "depends_on": [
         "W02"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "REVIEW_PARTIAL",
+      "session": "7b622f01-495f-47d8-baba-a02c81d0e9db",
+      "stalled": true,
+      "evidence": [
+        "https://github.com/EpyonAI/EpyonAI-University/pull/20"
+      ]
     },
     {
       "id": "W09",
@@ -100,8 +123,9 @@
       "depends_on": [
         "W01"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "BLOCKED",
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W10",
@@ -118,8 +142,9 @@
         "W06",
         "W07"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "BLOCKED",
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W11",
@@ -129,7 +154,8 @@
       "requested_model": "GPT-6.1 Sol",
       "depends_on": [],
       "status": "QUEUED",
-      "session": null
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W12",
@@ -140,8 +166,9 @@
       "depends_on": [
         "W11"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "BLOCKED",
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W13",
@@ -151,7 +178,8 @@
       "requested_model": "GPT-6.1 Sol",
       "depends_on": [],
       "status": "QUEUED",
-      "session": null
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W14",
@@ -161,7 +189,8 @@
       "requested_model": "GPT-6.1 Sol",
       "depends_on": [],
       "status": "QUEUED",
-      "session": null
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W15",
@@ -173,8 +202,9 @@
         "W13",
         "W14"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "BLOCKED",
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W16",
@@ -184,7 +214,8 @@
       "requested_model": "GPT-6 Luna",
       "depends_on": [],
       "status": "QUEUED",
-      "session": null
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W17",
@@ -194,7 +225,8 @@
       "requested_model": "GPT-6 Astra",
       "depends_on": [],
       "status": "QUEUED",
-      "session": null
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W18",
@@ -206,8 +238,9 @@
         "W01",
         "W02"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "BLOCKED",
+      "session": null,
+      "stalled": true
     },
     {
       "id": "W19",
@@ -218,8 +251,9 @@
       "depends_on": [
         "W14"
       ],
-      "status": "QUEUED",
-      "session": null
+      "status": "BLOCKED",
+      "session": null,
+      "stalled": true
     }
   ]
 }
