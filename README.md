@@ -31,7 +31,11 @@ Pathfinder also links to local resources to provide students with the tangible r
 
 The Library Card might be the single most slept on unlock in the year 2026. 
 
+<<<<<<< HEAD
 Did you knthat your local library has computers where you can learn to leverage Microsift Copilot to perform accounting tasks and did you know that the enrollment rates for accounting students has been steadily declining for years, so much so that accounting firms have had to seek to fill their staffing pipelines with offshore talent of automation and AI. These solutions rarely create a sustainable fix for the problem. 
+=======
+Did you know that your local library has computers where you can learn to leverage Microsift Copilot to perform accounting tasks and did you know that the enrollment rates for accounting students has been steadily declining for years, so much so that accounting firms have had to seek to fill their staffing pipelines with offshore talent of automation and AI. These solutions rarely create a sustainable fix for the problem. 
+>>>>>>> 68b116f6c85ab7712a29f3ca08ac6afe29a1a674
 
 Do you know who would love an accounting job with a salary and benefits where you get to work normal hours and sit in a chair in air conditioning for 9-12 hours per day. 
 

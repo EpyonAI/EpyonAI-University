@@ -447,4 +447,7 @@ FodyWeavers.xsd
 *.msm
 *.msp
 .vercel
+<<<<<<< HEAD
 .env*
+=======
+>>>>>>> 68b116f6c85ab7712a29f3ca08ac6afe29a1a674
