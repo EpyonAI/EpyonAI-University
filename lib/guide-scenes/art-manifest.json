@@ -1,0 +1,44 @@
+[
+  {
+    "file": "chatgpt.webp",
+    "sourceFile": "ChatGPT_Card.png",
+    "sourceSha256": "27a85d0e23534c862a0aabaee7f2d6af9b9ebff28af608ece7ec5e820df308da",
+    "sha256": "70c77fcf6fd901bd240caedca38982876c47074c1d86b555f09d2a7f6d155365"
+  },
+  {
+    "file": "claude.webp",
+    "sourceFile": "Claude_Card.png",
+    "sourceSha256": "32c63d04c85d94ef0603b488a417f11c44b5ae98de649d8e5628b383bf168390",
+    "sha256": "a25d5db144ad53fd8d7dac03211e1666aacf3b65d600a229c9413f55397c8505"
+  },
+  {
+    "file": "copilot.webp",
+    "sourceFile": "Copilot_Card.png",
+    "sourceSha256": "5abf2951aafd7f204e36ca634561c28688aba324218e195c0b7ad0bb3858410f",
+    "sha256": "e8094cf8c6e16eea656f404ab504ec52e8a60e76ca18ec613cef0f88c4ebb368"
+  },
+  {
+    "file": "gemini.webp",
+    "sourceFile": "Gemini_Card.png",
+    "sourceSha256": "f22c83f41e5f600c38396ec91324ea51281c34f921cffd7c4202fcdacc28e412",
+    "sha256": "4fcaca8d5a2183f8486eaefe4c917926f1f7e0d498eb7159cb77d68b370f6f50"
+  },
+  {
+    "file": "grok.webp",
+    "sourceFile": "Grok_Card.png",
+    "sourceSha256": "d3780e48f76f8052c8e948a33c7b579f7ce5fc756a2851e679999875b383efa6",
+    "sha256": "8f24c774f741176e6098e543d1f748827e6364c36824b6500045d4b542203058"
+  },
+  {
+    "file": "perplexity.webp",
+    "sourceFile": "Perplexity_Card.png",
+    "sourceSha256": "44053d8a957ca307dead5ed7c071c1aabcb76d28a5a60f277eebeab7a623b210",
+    "sha256": "d44bd2c465def00b1bcbc270327f55113866ab211427a2234e5769923ede39ec"
+  },
+  {
+    "file": "codex-patch.webp",
+    "sourceFile": "EpyonHQ_Codex_Patch_small.png",
+    "sourceSha256": "c94de8de99a9c7d2de6676644904ad0a031c746df92d43d404edeb411d05e585",
+    "sha256": "1ab82b6812029047d0b539dcb6ac1bda71bbcfc101d5b56d1a0eae7cea598bbd"
+  }
+]
