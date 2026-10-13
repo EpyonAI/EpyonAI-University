@@ -43,6 +43,12 @@ export default function Footer() {
             A Georgia 501(c)(3) educational nonprofit making learning accessible
             and helping people turn potential into opportunity.
           </p>
+          <p className="mt-4 text-sm leading-7">EIN: 41-3985129</p>
+          <address className="text-sm not-italic leading-7">
+            1101 Riverbend Club Dr SE
+            <br />
+            Atlanta, GA 30339
+          </address>
           <p className="mt-6 text-xs">
             Copyright {new Date().getFullYear()} Epyon AI University. Built by
             the Epyon crew.
