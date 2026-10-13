@@ -52,7 +52,7 @@ export default function CompassPage() {
           accessibility, explanation, and community relevance.
         </p>
         <a
-          href="mailto:contact@epyonai.org?subject=Compass%20News"
+          href="mailto:Pathfinder@epyonai.org?subject=Compass%20News"
           className="btn-dark mt-7"
         >
           Talk with us →
