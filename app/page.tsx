@@ -61,6 +61,23 @@ const guides = [
   },
 ];
 
+const fieldNotes = [
+  {
+    eyebrow: "Founding music pilot",
+    title: "One route. More than one way to win.",
+    copy: "Charlie is building a real music and digital-media pathway from studio skills to paid service work, a small business, an industry role, or the artist dream. Each useful skill becomes an off-ramp—not a consolation prize.",
+    image: "/progress/one-shot.jpg",
+    alt: "Epyon Pathways One Shot artwork with headphones, microphone, Atlanta skyline, and notebook",
+  },
+  {
+    eyebrow: "Art + opportunity",
+    title: "The pathway should work for its builders, too.",
+    copy: "SCAD artist Tai Se is joining a working studio session to explore Pathfinder and PATCH art direction while shaping a focused creative offer he can take to real clients.",
+    image: "/progress/tai-se.jpg",
+    alt: "Epyon Pathways Tai Se artwork with Atlanta skyline, drawing tablet, brushes, and concept sketches",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -264,14 +281,86 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section id="progress" className="bg-white px-5 py-16 sm:px-8 lg:px-12">
+      <section
+        id="progress"
+        className="overflow-hidden bg-[#090b09] px-5 py-16 text-white sm:px-8 lg:px-12"
+      >
         <div className="mx-auto max-w-7xl">
-          <p className="eyebrow text-teal-700">
-            Our first chapter · October 2026
+          <p className="eyebrow text-[#a7f432]">
+            Field notes · October 2026
           </p>
           <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
-            The mission is becoming real.
+            Pathfinder is moving off the page.
           </h2>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-stone-300">
+            We are testing pathways with real people, real equipment, and real
+            constraints—then turning what works into a route someone else can
+            follow.
+          </p>
+
+          <article className="mt-10 overflow-hidden border border-[#a7f432]/35 bg-[#111610] shadow-2xl">
+            <div className="relative aspect-[5/2] min-h-56 w-full">
+              <Image
+                src="/progress/studio-week.jpg"
+                alt="Epyon Pathways Studio Week artwork featuring microphones, mixing equipment, Atlanta landmarks, and a green route line"
+                fill
+                sizes="(max-width: 1279px) 100vw, 1280px"
+                className="object-cover"
+              />
+            </div>
+            <div className="grid gap-6 border-t border-white/10 p-6 sm:p-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+              <div>
+                <p className="eyebrow text-[#a7f432]">Studio Week · In progress</p>
+                <h3 className="mt-3 text-2xl font-black sm:text-3xl">
+                  The library becomes the classroom.
+                </h3>
+              </div>
+              <div className="space-y-4 leading-7 text-stone-300">
+                <p>
+                  This week begins at Sewell Mill Library’s recording studio.
+                  The crew will record a Pathfinder conversation, work on music,
+                  tour the media lab, and document how free public equipment can
+                  become a practical on-ramp to creative work.
+                </p>
+                <p>
+                  The plan is intentionally one library at a time: learn the
+                  people, tools, access rules, and real workflow deeply enough
+                  to build guidance that does not send the next learner into a
+                  surprise.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div className="mt-8 grid gap-8 lg:grid-cols-2">
+            {fieldNotes.map((note) => (
+              <article
+                key={note.title}
+                className="overflow-hidden border border-white/10 bg-[#111610]"
+              >
+                <div className="relative aspect-[5/2] min-h-48 w-full">
+                  <Image
+                    src={note.image}
+                    alt={note.alt}
+                    fill
+                    sizes="(max-width: 1023px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="border-t border-white/10 p-6 sm:p-7">
+                  <p className="eyebrow text-[#a7f432]">{note.eyebrow}</p>
+                  <h3 className="mt-3 text-2xl font-black">{note.title}</h3>
+                  <p className="mt-4 leading-7 text-stone-300">{note.copy}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-12 flex items-center gap-4">
+            <span className="h-px flex-1 bg-white/15" aria-hidden="true" />
+            <p className="eyebrow text-stone-400">Early milestones</p>
+            <span className="h-px flex-1 bg-white/15" aria-hidden="true" />
+          </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               [
@@ -293,14 +382,14 @@ export default function HomePage() {
             ].map(([title, copy]) => (
               <div
                 key={title}
-                className="rounded-xl border border-slate-200 p-6"
+                className="border border-white/10 bg-white/[0.04] p-6"
               >
-                <h3 className="font-bold text-slate-950">{title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{copy}</p>
+                <h3 className="font-bold text-white">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-stone-400">{copy}</p>
               </div>
             ))}
           </div>
-          <p className="mt-6 text-sm leading-6 text-slate-500">
+          <p className="mt-6 text-sm leading-6 text-stone-500">
             We are in early development. These are beginnings, and we will share
             what we learn as the programs grow.
           </p>
@@ -322,7 +411,7 @@ export default function HomePage() {
             place in this work. Tell us what you hope to learn, what you can
             share, or which door you want to help open.
           </p>
-          <a href="mailto:contact@epyonai.org" className="btn-primary mt-7">
+          <a href="mailto:Pathfinder@epyonai.org" className="btn-primary mt-7">
             Start a conversation →
           </a>
         </div>

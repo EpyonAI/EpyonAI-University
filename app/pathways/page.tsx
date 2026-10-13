@@ -143,7 +143,7 @@ export default function PathwaysPage() {
             earnings are not guaranteed.
           </p>
           <a
-            href="mailto:contact@epyonai.org?subject=Pathways%20conversation"
+            href="mailto:Pathfinder@epyonai.org?subject=Pathways%20conversation"
             className="btn-dark mt-6"
           >
             Talk with us →
