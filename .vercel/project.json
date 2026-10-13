@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_6GaiqZ1QNJ6DXoHdGmOU87CQXwr0",
+  "orgId": "team_uMCD9myTRAKCsZnZosSCQriv",
+  "projectName": "epyonaiorg",
+  "settings": {
+    "createdAt": 1789735000080,
+    "framework": "nextjs",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}
