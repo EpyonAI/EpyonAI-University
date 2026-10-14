@@ -1,0 +1,44 @@
+name: Ad Grants policy check
+on:
+  pull_request:
+  schedule:
+    - cron: "0 14 * * 1"   # weekly regular check
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run Ad Grants policy check
+        id: check
+        run: node scripts/ad-grants-check.mjs
+        continue-on-error: true
+      - name: Live link check (scheduled/manual only)
+        if: github.event_name != 'pull_request'
+        id: live
+        run: |
+          npx --yes linkinator https://epyonai.org --recurse --skip "^(?!https://epyonai.org)" --format text > live-links.txt 2>&1 || echo "failed" > live-failed
+          cat live-links.txt | tail -50 >> ad-grants-report.md || true
+          [ ! -f live-failed ]
+        continue-on-error: true
+      - name: Email report on issues
+        if: steps.check.outcome == 'failure' || steps.live.outcome == 'failure'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          secure: true
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "Ad Grants policy issues - ${{ github.repository }} (${{ github.event_name }})"
+          to: captain@epyonai.org,saige@epyonai.org
+          from: ${{ secrets.SMTP_USERNAME }}
+          body: file://ad-grants-report.md
+      - name: Fail job if issues found
+        if: steps.check.outcome == 'failure' || steps.live.outcome == 'failure'
+        run: exit 1
