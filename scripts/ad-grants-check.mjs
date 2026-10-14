@@ -54,6 +54,17 @@ for (const f of files) {
   }
 }
 
+// Required identifying content (Ad Grants: clear mission, EIN/charity ID). Fails if removed.
+const required = [
+  ["app/page.tsx", /mission/i, "homepage must reference the mission"],
+  ["components/layout/Footer.tsx", /\b\d{2}-\d{7}\b/, "footer must show the nonprofit EIN (NN-NNNNNNN)"],
+  ["app/about/page.tsx", /mission/i, "About page must state the mission"],
+  ["app/about/page.tsx", /\b\d{2}-\d{7}\b/, "About page must show the nonprofit EIN (NN-NNNNNNN)"],
+];
+for (const [f, re, msg] of required) {
+  if (!existsSync(f) || !re.test(readFileSync(f, "utf8"))) issues.push(`${f}: ${msg}`);
+}
+
 const report = issues.length
   ? `# Ad Grants website-policy check: ${issues.length} issue(s)\n\n` + issues.map((i) => `- ${i}`).join("\n") + "\n"
   : "# Ad Grants website-policy check: passed\n";
