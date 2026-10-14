@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "control_issue": "https://github.com/EpyonAI/EpyonAI-University/issues/8",
-  "last_verified": "2026-10-13T18:56:00-04:00",
+  "last_verified": "2026-10-14T07:55:00-04:00",
   "orders": [
     {
       "id": "W01",
@@ -107,11 +107,12 @@
       "depends_on": [
         "W02"
       ],
-      "status": "REVIEW_PARTIAL",
+      "status": "PUBLISHED_PREVIEW_PARTIAL",
       "session": "7b622f01-495f-47d8-baba-a02c81d0e9db",
-      "stalled": true,
+      "stalled": false,
       "evidence": [
-        "https://github.com/EpyonAI/EpyonAI-University/pull/20"
+        "https://github.com/EpyonAI/EpyonAI-University/pull/20",
+        "https://www.epyonai.org/preview/guide-scenes"
       ]
     },
     {
