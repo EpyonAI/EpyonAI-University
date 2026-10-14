@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "control_issue": "https://github.com/EpyonAI/EpyonAI-University/issues/8",
-  "last_verified": "2026-10-14T07:55:00-04:00",
+  "last_verified": "2026-10-14T18:56:00-04:00",
   "orders": [
     {
       "id": "W01",
@@ -25,7 +25,7 @@
       ],
       "status": "PUBLISHED_PARTIAL",
       "session": null,
-      "stalled": false,
+      "stalled": true,
       "evidence": [
         "https://github.com/EpyonAI/EpyonAI-University/pull/21",
         "https://github.com/EpyonAI/EpyonAI-University/pull/26"
@@ -78,7 +78,7 @@
       "depends_on": [],
       "status": "PUBLISHED_PARTIAL",
       "session": null,
-      "stalled": false,
+      "stalled": true,
       "evidence": [
         "https://github.com/EpyonAI/EpyonAI-University/pull/22",
         "https://github.com/EpyonAI/EpyonAI-University/pull/26",
@@ -109,7 +109,7 @@
       ],
       "status": "PUBLISHED_PREVIEW_PARTIAL",
       "session": "7b622f01-495f-47d8-baba-a02c81d0e9db",
-      "stalled": false,
+      "stalled": true,
       "evidence": [
         "https://github.com/EpyonAI/EpyonAI-University/pull/20",
         "https://www.epyonai.org/preview/guide-scenes"
@@ -143,9 +143,14 @@
         "W06",
         "W07"
       ],
-      "status": "BLOCKED",
+      "status": "REVIEW_BLOCKED",
       "session": null,
-      "stalled": true
+      "stalled": false,
+      "evidence": [
+        "https://github.com/EpyonAI/EpyonAI-University/pull/27",
+        "https://github.com/EpyonAI/EpyonAI-University/pull/27#issuecomment-6170908410",
+        "https://github.com/EpyonAI/EpyonAI-University/actions/runs/38581490576"
+      ]
     },
     {
       "id": "W11",
