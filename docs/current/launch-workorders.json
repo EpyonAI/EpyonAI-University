@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "control_issue": "https://github.com/EpyonAI/EpyonAI-University/issues/8",
-  "last_verified": "2026-10-14T18:56:00-04:00",
+  "last_verified": "2026-10-15T18:56:00-04:00",
   "orders": [
     {
       "id": "W01",
@@ -145,7 +145,7 @@
       ],
       "status": "REVIEW_BLOCKED",
       "session": null,
-      "stalled": false,
+      "stalled": true,
       "evidence": [
         "https://github.com/EpyonAI/EpyonAI-University/pull/27",
         "https://github.com/EpyonAI/EpyonAI-University/pull/27#issuecomment-6170908410",
